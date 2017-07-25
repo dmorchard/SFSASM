@@ -1,4 +1,4 @@
-# SFSASM
+# SFSASM (pre-alpha)
 Space frame structural analysis by stiffness matrix... via Ruby in SketchUp
 
 ## Goals
