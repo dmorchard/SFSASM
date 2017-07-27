@@ -32,6 +32,7 @@ Space frame structural analysis by stiffness matrix... via Ruby in SketchUp
 - "Face centroid & properties" SketchUp extension by Alex Schreyer (https://github.com/alexschreyer/Face-Centroid-and-Properties-Plugin)
 ### Ruby documentaion...
 - http://ruby-for-beginners.rubymonstas.org/index.html
+- matrix class (http://ruby-doc.org/stdlib-2.0.0/libdoc/matrix/rdoc/Matrix.html)
 - (under construction)
 
 ## Planned features...
