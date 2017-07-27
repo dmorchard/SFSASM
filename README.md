@@ -31,6 +31,7 @@ Space frame structural analysis by stiffness matrix... via Ruby in SketchUp
 - various SketchUp extensions by Daiku (Clark Bremer) relevant to timber frame design & fabrication (http://extensions.sketchup.com/en/user/2666/store)
 - "Face centroid & properties" SketchUp extension by Alex Schreyer (https://github.com/alexschreyer/Face-Centroid-and-Properties-Plugin)
 ### Ruby documentaion...
+- http://ruby-for-beginners.rubymonstas.org/index.html
 - (under construction)
 
 ## Planned features...
