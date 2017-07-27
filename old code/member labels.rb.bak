@@ -1,0 +1,12 @@
+mod = Sketchup.active_model  # Open model
+ent = mod.entities  # All entities in model
+sel = mod.selection  # Current selection
+
+c = 0
+
+sel.each { |e|
+  if e.typename == "Edge"
+    c = c + 1
+    ent.add_text "M" + c.to_s, e.bounds.center
+  end
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Member results">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Load_0, lateral, q(x)" type="xs:string" />
+				<xs:element name="Load_1, axial, P(x)" type="xs:string" />
+				<xs:element name="Load_2, shear, V(x)" type="xs:string" />
+				<xs:element name="Load_3, moment, M(x)" type="xs:string" />
+				<xs:element name="Load_4, rotation, rot(x)" type="xs:string" />
+				<xs:element name="Load_5, deflection, def(x)" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

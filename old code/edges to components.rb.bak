@@ -1,0 +1,42 @@
+mod = Sketchup.active_model  # Open model
+ent = mod.entities  # All entities in model
+sel = mod.selection  # Current selection
+
+c = 0
+nodes = []
+
+ent.each { |e|
+  if e.typename == "Edge"
+    c = c + 1
+    nodes.push e.vertices
+    t = ent.add_text "M" + c.to_s, e.bounds.center
+    g = ent.add_group(e,t)
+    g.name="M" + c.to_s
+    #add attribute dictionary: "DMO_member_input/member physical properties"
+    #g.set_attribute "member physical properties", "member physical properties", 100
+  end
+}
+
+nodes.flatten!
+#nodes.uniq!
+filename = UI.openpanel 'Text file for node coordinates'
+if filename
+    f = File.open(filename, 'w')
+    # Write x,y,z coordinates in specific units
+    nodes.each { |n|
+        f.print n.position.x.to_inch,',',n.position.y.to_inch,',',n.position.z.to_inch,"\n"
+    }
+    f.close    
+end
+
+c = 0
+
+nodes.each { |n|
+  c = c + 1
+  t = ent.add_text "N" + c.to_s, n.position
+  g = ent.add_group(t)
+  g.name="N" + c.to_s
+}
+
+
+#ent.definitions.purge_unused   THIS SEEMS TO BE PURGING USED GROUPS/COMPONENTS :/

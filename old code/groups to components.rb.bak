@@ -1,0 +1,25 @@
+mod = Sketchup.active_model # Open model
+ent = mod.entities # All entities in model
+sel = mod.selection # Current selection
+
+#UI.messagebox(,M_OK)
+
+ent.each { |e|
+  UI.messagebox(e.typename,MB_OK)
+  if e.typename == "Group"
+    name = e.name
+    c = e.to_component
+    c.definition.name = name
+    
+    UI.messagebox(c.name[1],MB_OK)    
+    #apply appropriate dictionary
+    case c.name[1]
+    when "M"
+        UI.messagebox("M*",MB_OK)
+        c.definition.add_classification("DMO_member_input", "Member physical properties")
+    when "N"
+        UI.messagebox("M*",MB_OK)
+    #nodes "always face camera"
+    end
+  end
+}

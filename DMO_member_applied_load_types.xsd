@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="1_Point">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Magnitude, P" type="xs:string" />
+				<xs:element name="Location, a" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="2_Moment">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Magnitude, M" type="xs:string" />
+				<xs:element name="Location, a" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="3_UDL">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Magnitude, w" type="xs:string" />
+				<xs:element name="Location, a (start)" type="xs:string" />
+				<xs:element name="Location, c (end)" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="4_LDL">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Magnitude_1, w_1 (start)" type="xs:string" />
+				<xs:element name="Location, a (start)" type="xs:string" />
+				<xs:element name="Magnitude_2, w_2 (start)" type="xs:string" />
+				<xs:element name="Location, c (end)" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

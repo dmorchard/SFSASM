@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Nodal constraints, applied loads, displacements">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Constraint, rotational, r_X" type="xs:string" />
+				<xs:element name="Constraint, rotational, r_Y" type="xs:string" />
+				<xs:element name="Constraint, rotational, r_Z" type="xs:string" />
+				<xs:element name="Constraint, tanslational, u_X" type="xs:string" />
+				<xs:element name="Constraint, tanslational, u_Y" type="xs:string" />
+				<xs:element name="Constraint, tanslational, u_Z" type="xs:string" />
+				<xs:element name="Displacement, d_X" type="xs:string" />
+				<xs:element name="Displacement, d_Y" type="xs:string" />
+				<xs:element name="Displacement, d_Z" type="xs:string" />
+				<xs:element name="Load, P_X" type="xs:string" />
+				<xs:element name="Load, P_Y" type="xs:string" />
+				<xs:element name="Load, P_Z" type="xs:string" />
+				<xs:element name="Moment, M_X" type="xs:string" />
+				<xs:element name="Moment, M_Y" type="xs:string" />
+				<xs:element name="Moment, M_Z" type="xs:string" />
+				<xs:element name="Spring support, k_X" type="xs:string" />
+				<xs:element name="Spring support, k_Y" type="xs:string" />
+				<xs:element name="Spring support, k_Z" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
