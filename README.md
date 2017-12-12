@@ -14,6 +14,7 @@ Space frame structural analysis by stiffness matrix... via Ruby in SketchUp
 - Structural Analysis, 6th Edition; Hibbeler, R.C.
 - Structural Analysis, 8th Edition; Hibbeler, R.C.
 - Annigeri's algorithm for numbering DsOF (http://www.annigeri.in/2012/04/direct-stiffness-method-dof-numbering.html)
+- TrussFab extension in SketchUp, blog post (https://blog.sketchup.com/article/message-bottle-exploration-truss-automation?mkt_tok=eyJpIjoiTWpjNVptWmpaR1ZqTkRGbSIsInQiOiJOaW5iRnpnYm8wT2lLdmk5a0FiaWxHMlJVTllyQWVka3EzVEt1VTM5dDh6VHRTN0x5eHcyMnlCcG1LbFYyWGdoVDkzcU1UcDlrVHV3Z2E0Ymg2MEVlUEJweEFOcHVidHhsRTlTTm9LOU9JbnhTVFdCWFNEKytaajJEUXlTU1RXOCJ9) <--- holy shit!  URL much?
 ### Applicable codes & design guidance...
 - CAN/CSA O86-14, Engineering design in wood
 - NBCC-2015, National Building Code of Canada, Vol. 1, Div. B, Part 4 - Structural Design
